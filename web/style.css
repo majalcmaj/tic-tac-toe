@@ -1,0 +1,15 @@
+#board-placeholder {
+    width: 150px;
+  display: flex;                       
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+#board-placeholder div {
+  flex: 50 50 32%;                       /* don't grow, don't shrink, width */
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 50px;
+}
