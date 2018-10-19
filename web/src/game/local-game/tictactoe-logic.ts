@@ -17,13 +17,15 @@ export class TicTacToeLogic {
         this.movesCounter++
         this.playerIsTic = !this.playerIsTic
     }
+
     isGameFinished(): boolean {
         if (this.movesCounter >= FIELDS_COUNT) {
             this._gameResult = Figure.NONE
-            return true
+            this.gameFinished = true
         } else {
-            return this.checkForWin()
+            this.gameFinished = this.checkForWin()
         }
+        return this.gameFinished
     }
 
     get playerTurn() {
