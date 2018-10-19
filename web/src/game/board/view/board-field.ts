@@ -1,6 +1,6 @@
 import { Figure } from "../../common/figure";
-import tac_img from "../../../images/tac.svg";
-import tic_img from "../../../images/tic.svg";
+import tac_img from "../../../../images/tac.svg";
+import tic_img from "../../../../images/tic.svg";
 
 export default class BoardField {
     constructor(private clickCallback: () => void) {

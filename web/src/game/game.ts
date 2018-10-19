@@ -1,9 +1,8 @@
-import { Client } from "./remote/client";
-import GameEngine from "./game/game-engine";
-import LocalGameEngine from "./game/local-game/local-game-engine";
 import { BoardView } from "./board/view/board-view";
 import BoardModel from "./board/model/board-model";
 import BoardController from "./board/controller/board-controller";
+import GameEngine from "./engine/game-engine";
+import LocalGameEngine from "./engine/local/local-game-engine";
 
 window.onload = () => {
     const gameEngine: GameEngine = new LocalGameEngine()

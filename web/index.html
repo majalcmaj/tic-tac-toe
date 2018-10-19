@@ -1,7 +1,16 @@
 <html>
 <body>
-  <script src="./src/index.ts"></script>
-  <link rel="stylesheet" href="style.css">
+  <script src="./src/lobby/lobby.ts"></script>
+  <link rel="stylesheet" href="styles/lobby-style.css">
 </body>
-<div id="board-placeholder"></div>
+<form id="nickname-form">
+  <label for="nick">Nickname: </label>
+  <input name="nick" type="text"/>
+  <input type="submit" value="Set"/>
+</form>
+<div id="lobby-placeholder">
+  
+</div>
+<button id="start-online-game-button">Start online game</button>
+<button id="start-local-game-button">Start local game</button>
 </html>
